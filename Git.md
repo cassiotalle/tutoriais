@@ -42,6 +42,22 @@ Comitar
 git commit -m "descrição"
 ```
 
+## Git Log
+
+Quantidade de commits por usuário
+
+```bash
+git shortlog
+```
+
+Exibe de forma fráfica as alteraçãoes no repositório de branches e verções
+
+```bash
+git log graph
+```
+
+
+
 ## Git Ignore
 
 Arquivo para indicar quais arquivos não farão parte do repositório
