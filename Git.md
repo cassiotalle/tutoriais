@@ -7,12 +7,12 @@ git config --global user.name "Cássio Talle e Silva"`
 ```
 
 ```bash
-git config --global user.name "Cássio Talle e Silva"
+git config --global user.email "cassio....@gmail.com"
 ```
 
 ## Comandos de repositório
 
-Iniciar diretório
+Iniciar repositório
 
 ```bash
 git init
@@ -48,19 +48,25 @@ Quantidade de commits por usuário
 git shortlog
 ```
 
-Exibe todos os comits e suas hashes
+Exibe todos os commits e suas hashes
 
 ```bash
 git log
 ```
 
-Exibe alterações do commit através da hash
+Exibe alterações do último commit
+
+```bash
+git show
+```
+
+Exibe alterações do commit específico através da hash
 
 ```bash
 git show 67faf91448db01d4d328b0b17898f15bea1b4707
 ```
 
-Exibe de forma gráfica as alteraçãoes no repositório de branches e verções
+Exibe de forma gráfica as alteraçãoes no repositório (branches e verções)
 
 ```bash
 git log graph
@@ -94,19 +100,19 @@ git reset HEAD Nome_do_arquivo.algumacoisa
 
 ### Desfazer commits
 
-Desfaz commit e volta para o status staged, pronto para ser commitado de novo
+Desfaz commit e volta para o status **staged**, pronto para ser commitado de novo
 
 ```bash
 git reset --soft
 ```
 
-Desfaz commit e volta para o status modified pronto para ser adicionado de novo
+Desfaz commit e volta para o status **modified** pronto para ser adicionado de novo
 
 ```bash
 git reset --mixed
 ```
 
-Desfaz commit e apaga todas as alterações
+Desfaz commit e **apaga** todas as alterações
 
 ```bash
 git reset --hard
@@ -154,4 +160,46 @@ Enviar alterações comitadas. A partir da segunda vez só `git push`
 git push -u origin master
 ```
 
-## Copiar repositório na nuvem
+### Clonar repositório
+
+```bash
+git clone git@github.com:cassiotalle/tutoriais.git nome_do_repositorio_na maquina
+```
+
+Fork serve para compiar um projeto e submeter essa alteração para o projeto original a alteração entra como um pull request no projeto original
+
+## Branches
+
+Listar branch
+
+```bash
+git branch
+```
+
+Criar branch
+
+```bash
+git checkout -b nome_do_branch
+```
+
+Entrar em um branch
+
+```bash
+git checkout nome_do_branch
+```
+
+Deletar branch (todos os arquivos do branch são deletados)
+
+```bash
+git checkout -D nome_branch
+```
+
+## Merge e Rebase
+
+Merge junta dois branches com um commit
+
+
+
+
+
+Rebase realinha todas as alterações de dois branches em um única linha sequnecial
