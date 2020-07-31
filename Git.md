@@ -198,8 +198,54 @@ git checkout -D nome_branch
 
 Merge junta dois branches com um commit
 
-
-
-
+```bash
+git merge nome_do_branch
+```
 
 Rebase realinha todas as alterações de dois branches em um única linha sequnecial
+
+```bash
+git rebase nome_do_branch
+```
+
+## Gitignore
+
+[GitHub - github/gitignore: A collection of useful .gitignore templates](https://github.com/github/gitignore)
+
+Arquivo `.gitignore`para listar arquivos e extenções que devem ser agnorados pelo git
+
+## Git Stash
+
+Serve para guardar mudanças antes de commitar sem deixa-las com o status **modfied**
+
+Para guardar alterações no stash
+
+```bash
+git stash
+```
+
+Para utilizar as mudanças que estavam guardadas 
+
+```bash
+git stash apply
+```
+
+Visualizar o stash
+
+```bash
+git stash list
+```
+
+Limpar stash
+
+```bash
+git stash clear
+```
+
+## Git Tag
+
+Serve para indicar verções ou dar nome para grupos de commits 
+
+```bash
+
+```
