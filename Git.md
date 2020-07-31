@@ -118,12 +118,6 @@ Desfaz commit e **apaga** todas as alterações
 git reset --hard
 ```
 
-##
-
-## Git Ignore
-
-Arquivo para indicar quais arquivos não farão parte do repositório
-
 ## Github
 
 ### SSH
@@ -247,5 +241,37 @@ git stash clear
 Serve para indicar verções ou dar nome para grupos de commits 
 
 ```bash
+git tag -a 0.9 -m "Initial version tutorials"
+```
 
+Apagar tag
+
+```bash
+git tag -d 0.9
+```
+
+Apagar tag no Github (após apagar localmente)
+
+```bash
+git push orgin :0.9
+```
+
+Enviar para as tags para o repositório remoto
+
+```bash
+git push origin master --tags
+```
+
+Listar tags
+
+```bash
+git tag
+```
+
+## Git revert
+
+Desfaz commit, mas não exclui as alterações ele ainda fica difponível para utilizado
+
+```bash
+git revert 5e1c0ff9f274382499498ef1d7c073b0f922a31a
 ```
