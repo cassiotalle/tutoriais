@@ -34,8 +34,6 @@ git add .
 git add readme.md
 ```
 
-
-
 Comitar
 
 ```bash
@@ -50,13 +48,69 @@ Quantidade de commits por usuário
 git shortlog
 ```
 
-Exibe de forma fráfica as alteraçãoes no repositório de branches e verções
+Exibe todos os comits e suas hashes
+
+```bash
+git log
+```
+
+Exibe alterações do commit através da hash
+
+```bash
+git show 67faf91448db01d4d328b0b17898f15bea1b4707
+```
+
+Exibe de forma gráfica as alteraçãoes no repositório de branches e verções
 
 ```bash
 git log graph
 ```
 
+Exibe alterações de todos os arquicos antes de commitar
 
+```bash
+git diff
+```
+
+Exibe nome dos arquivos alterados
+
+```bash
+git diff --name-only
+```
+
+## Desfazer alterações
+
+Destafazer altaração antes de commitar
+
+```bash
+git checkout Nome_do_arquivo.algumacoisa
+```
+
+Desfazer `git add` 
+
+```bash
+git reset HEAD Nome_do_arquivo.algumacoisa
+```
+
+### Desfazer commits
+
+Desfaz commit e volta para o status staged, pronto para ser commitado de novo
+
+```bash
+git reset --soft
+```
+
+Desfaz commit e volta para o status modified pronto para ser adicionado de novo
+
+```bash
+git reset --mixed
+```
+
+Desfaz commit e apaga todas as alterações
+
+```bash
+git reset --hard
+```
 
 ## Git Ignore
 
@@ -64,8 +118,4 @@ Arquivo para indicar quais arquivos não farão parte do repositório
 
 ## Conectar com Github
 
-
-
 ## Copiar repositório na nuvem
-
-
