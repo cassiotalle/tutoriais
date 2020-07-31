@@ -86,7 +86,7 @@ Destafazer altaração antes de commitar
 git checkout Nome_do_arquivo.algumacoisa
 ```
 
-Desfazer `git add` 
+Desfazer `git add`
 
 ```bash
 git reset HEAD Nome_do_arquivo.algumacoisa
@@ -112,10 +112,46 @@ Desfaz commit e apaga todas as alterações
 git reset --hard
 ```
 
+##
+
 ## Git Ignore
 
 Arquivo para indicar quais arquivos não farão parte do repositório
 
-## Conectar com Github
+## Github
+
+### SSH
+
+Criar chave publica e privada SSH
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "cassiotalle@gmail.com"
+```
+
+Exibir chave pública SSH
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+## Conectar com o repositório do Github
+
+Adicionar repositório externo (origin se refere ao nome do reposiório remoto, fica a critério do usuário)
+
+```bash
+git remote add origin git@github.com:cassiotalle/tutoriais.git
+```
+
+Exibe o nome dos repositórios remotos conectados ao projeto
+
+```bash
+git remote -v
+```
+
+Enviar alterações comitadas. A partir da segunda vez só `git push`
+
+```bash
+git push -u origin master
+```
 
 ## Copiar repositório na nuvem
